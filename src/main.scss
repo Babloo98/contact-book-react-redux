@@ -1,0 +1,165 @@
+.Appwrapper{
+    text-align: center;
+    background-color: #efdddd;
+    min-height: 100vh;
+}
+
+.App{
+    h3{
+        background: linear-gradient(to right, #ef8522 0%, #e21e25 29%, #9e2778 62%, #194893 100%);
+        background: -ms-linear-gradient(left, #ef8522 0%, #e21e25 29%, #9e2778 62%, #194893 100%);
+        font-family: Sky_Medium, sans-serif;
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-weight: 700;
+    }
+    .single-detail{
+        border-radius: 5px;
+        box-shadow: 0px 2.5px 5px 0 #c6b9b9;
+        background-color: #f3e9e9;
+        padding: 25px;
+        margin-top: 28px;
+        justify-content: space-around;
+        h4{
+            font-size: 16px;
+            font-weight: 600;
+        }
+        img{
+            width: 60px;
+        }
+        .actions{
+            span{
+                margin-left: 15px;
+                cursor: pointer;
+            }
+        }
+    }
+}
+.navbar{
+    padding-top: 30px;
+    padding-bottom: 20px;
+}
+
+.form{
+    background-color: rgba(255, 255, 255, 0.75);
+    border: solid 2px #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 24.5px 0 #e0cdcc;
+    min-height: 200px;
+    width: 60%;
+    margin: 0 auto;
+    padding: 30px;
+    text-align: left;
+    p{
+        font-size: 16px;
+        font-weight: 200;
+        color: black;
+    }
+    form{
+        border-radius: 5px;
+        box-shadow: 0px 2.5px 5px 0 #c6b9b9;
+        background-color: #f3e9e9;
+        padding: 25px;
+        margin-top: 28px;
+        label{
+            display: inline-block;
+            color: rgba(53, 64, 96, 0.88);
+            font-size: 14px;
+        }
+        .form-control{
+            border-width: 0;
+            box-shadow: 0 2.5px 5px 0 rgba(230, 215, 238, 0.45);
+            border-radius: 5px;
+            color: #354060;
+            font-family: Sky_Medium, sans-serif;
+            font-size: 16px;
+            margin-bottom: 2px;
+            padding: 15px;
+            width: 40%;
+            line-height: 1;
+            outline: none;
+            background-color: #ffffff;
+        }
+        .button{
+            width: 210px;
+            background-color: #4a9ef8;
+            min-height: 48px;
+            border: none;
+            border-radius: 3px;
+            margin-right: 15px;
+            color: white;
+            font-weight: 700;
+        }
+    }
+}
+
+.pages{
+    text-align: center;
+    text-decoration: none;
+    list-style-type: none;
+    width: 5%;
+}
+
+#page-numbers{
+    display: flex;
+    justify-content: center;
+}
+
+
+
+
+@media only screen and (max-width: 600px) {
+    body {
+      .form{
+          width: 90%;
+          padding: 10px;
+          .form-control{
+              width: 100%;
+          }
+          .button{
+            width: 100%;
+            background-color: #4a9ef8;
+            min-height: 48px;
+            margin-right: 0px;
+            margin-top: 15px;
+        }
+    }
+  }
+  .App{
+    .detail{
+        ul{
+            padding: 0px;
+        }
+    }
+    .single-detail{
+        border-radius: 5px;
+        box-shadow: 0px 2.5px 5px 0 #c6b9b9;
+        background-color: #f3e9e9;
+        padding: 10px;
+        margin-top: 28px;
+        // justify-content: space-around;
+        .media-body{
+            width: 60%;
+            p,h4{
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+            }
+        }
+        h4{
+            font-size: 16px;
+            font-weight: 600;
+        }
+        img{
+            width: 40px;
+        }
+        .actions{
+            span{
+                margin-left: 15px;
+                cursor: pointer;
+            }
+        }
+    }
+  }
+}
